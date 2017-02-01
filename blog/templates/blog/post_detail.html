@@ -8,7 +8,9 @@
                 </div>
             {% endif %}
             <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaksbr }}</p>
+            
             <iframe width="560" height="315" src="{{ post.video_dir }}" frameborder="0" allowfullscreen></iframe>
+
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endblock %}

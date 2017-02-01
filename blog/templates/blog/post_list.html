@@ -7,8 +7,11 @@
                     {{ post.published_date }}
                 </div>
                 <h1><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
+                
                 <iframe width="560" height="315" src="{{ post.video_dir }}" frameborder="0" allowfullscreen></iframe>
+
+                <p>{{ post.text|linebreaksbr }}</p>
+                
             </div>
         {% endfor %}
     {% endblock content %}
